@@ -1,4 +1,4 @@
-/*! Orbit Tooltips v0.1.0 | MIT license | https://orbitcss.com */
+/*! Orbit Tooltips v1.0.0 | MIT license | https://orbitcss.com */
 .tooltip {
   cursor: help;
   position: relative;
@@ -24,7 +24,7 @@
 
 .tooltip:after {
   background-color: #393939;
-  border-radius: 6px;
+  border-radius: 0;
   color: #ffffff;
   content: attr(data-tooltip-content);
   font-size: 0.75rem;
@@ -36,7 +36,7 @@
   white-space: pre-wrap;
 }
 
-.tooltip:hover:after, .tooltip:hover:before, .tooltip.is-active:after, .tooltip.is-active:before {
+.tooltip:hover:after, .tooltip:hover:before, .tooltip--active:after, .tooltip--active:before {
   opacity: 1;
 }
 
@@ -57,11 +57,11 @@
   transform: translate(-50%, 0) rotate(-45deg);
 }
 
-.tooltip--top:hover:after, .tooltip--top.is-active:after, .tooltip--top-left:hover:after, .tooltip--top-left.is-active:after, .tooltip--top-right:hover:after, .tooltip--top-right.is-active:after {
+.tooltip--top:hover:after, .tooltip--top--active:after, .tooltip--top-left:hover:after, .tooltip--top-left--active:after, .tooltip--top-right:hover:after, .tooltip--top-right--active:after {
   transform: translate(-50%, calc(6 * -1px));
 }
 
-.tooltip--top:hover:before, .tooltip--top.is-active:before, .tooltip--top-left:hover:before, .tooltip--top-left.is-active:before, .tooltip--top-right:hover:before, .tooltip--top-right.is-active:before {
+.tooltip--top:hover:before, .tooltip--top--active:before, .tooltip--top-left:hover:before, .tooltip--top-left--active:before, .tooltip--top-right:hover:before, .tooltip--top-right--active:before {
   transform: translate(-50%, calc(6 * -1px)) rotate(-45deg);
 }
 
@@ -78,11 +78,11 @@
   transform: translate(-50%, 0) rotate(-45deg);
 }
 
-.tooltip--bottom:hover:after, .tooltip--bottom.is-active:after, .tooltip--bottom-left:hover:after, .tooltip--bottom-left.is-active:after, .tooltip--bottom-right:hover:after, .tooltip--bottom-right.is-active:after {
+.tooltip--bottom:hover:after, .tooltip--bottom--active:after, .tooltip--bottom-left:hover:after, .tooltip--bottom-left--active:after, .tooltip--bottom-right:hover:after, .tooltip--bottom-right--active:after {
   transform: translate(-50%, 6px);
 }
 
-.tooltip--bottom:hover:before, .tooltip--bottom.is-active:before, .tooltip--bottom-left:hover:before, .tooltip--bottom-left.is-active:before, .tooltip--bottom-right:hover:before, .tooltip--bottom-right.is-active:before {
+.tooltip--bottom:hover:before, .tooltip--bottom--active:before, .tooltip--bottom-left:hover:before, .tooltip--bottom-left--active:before, .tooltip--bottom-right:hover:before, .tooltip--bottom-right--active:before {
   transform: translate(-50%, 6px) rotate(-45deg);
 }
 
@@ -113,11 +113,11 @@
   transform: translate(0, -50%) rotate(-45deg);
 }
 
-.tooltip--right:hover:after, .tooltip--right.is-active:after {
+.tooltip--right:hover:after, .tooltip--right--active:after {
   transform: translate(6px, -50%);
 }
 
-.tooltip--right:hover:before, .tooltip--right.is-active:before {
+.tooltip--right:hover:before, .tooltip--right--active:before {
   transform: translate(6px, -50%) rotate(-45deg);
 }
 
@@ -136,10 +136,10 @@
   transform: translate(0, -50%) rotate(-45deg);
 }
 
-.tooltip--left:hover:after, .tooltip--left.is-active:after {
+.tooltip--left:hover:after, .tooltip--left--active:after {
   transform: translate(calc(6 * -1px), -50%);
 }
 
-.tooltip--left:hover:before, .tooltip--left.is-active:before {
+.tooltip--left:hover:before, .tooltip--left--active:before {
   transform: translate(calc(6 * -1px), -50%) rotate(-45deg);
 }

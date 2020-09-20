@@ -1,5 +1,5 @@
 # [Orbit Tooltips](https://orbitcss.com)
-Simple CSS tooltips. You can use Orbit Tooltips as a stand-alone package in your project or alongside OrbitCSS for enhanced functionality. Check out the [documentation]((https://orbitcss.com/documentation/extensions/tooltips)) for examples.
+Simple CSS tooltips. You can use Orbit Tooltips as a stand-alone package in your project or alongside OrbitCSS for enhanced functionality. Check out the [documentation]((https://orbitcss.com/documentation/extensions/tooltips)) for setup and usage examples.
 
 [![npm](https://img.shields.io/npm/v/orbit-tooltips.svg?color=%236e45e2)](https://www.npmjs.com/package/orbit-tooltips)
 [![npm](https://img.shields.io/npm/l/orbit-tooltips.svg)](https://www.npmjs.com/package/orbit-tooltips)
@@ -10,19 +10,24 @@ Simple CSS tooltips. You can use Orbit Tooltips as a stand-alone package in your
 Get started using one of the methods below:
 
 ### NPM
-Orbit Tooltips is available on NPM and includes all of the source Sass along with the compiled CSS.
+You can install Orbit Tooltips with NPM.
 ```sh
 npm install orbit-tooltips
 ```
 
+Once installed, just import the module directly into your build.
+```sh
+@import './node_modules/orbit-tooltips/tooltips';
+```
+
 ### CDN Links
-Orbit Tooltips can be added to your project by adding the following [jsDelivr](https://cdn.jsdelivr.net/) URL to a link tag within your project.
+Use the [jsDelivr](https://cdn.jsdelivr.net/) CDN to include Orbit Tooltips directly into your project.
 ```sh
 https://cdn.jsdelivr.net/npm/orbit-tooltips/css/tooltips.min.css
 ```
 
 ### Github
-The complied CSS can be downloaded via Github.
+You can download the repository directly from Github.
 ```sh
 https://github.com/OrbitCSS/orbit-tooltips/tree/master/css
 ```
